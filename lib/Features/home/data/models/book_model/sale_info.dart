@@ -1,6 +1,5 @@
-import 'package:equatable/equatable.dart';
 
-class SaleInfo extends Equatable {
+class SaleInfo {
   final String? country;
   final String? saleability;
   final bool? isEbook;
@@ -19,6 +18,4 @@ class SaleInfo extends Equatable {
     'isEbook': isEbook,
   };
 
-  @override
-  List<Object?> get props => [country, saleability, isEbook];
 }

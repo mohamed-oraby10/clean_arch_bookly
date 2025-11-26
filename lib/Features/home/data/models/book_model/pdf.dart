@@ -1,6 +1,5 @@
-import 'package:equatable/equatable.dart';
 
-class Pdf extends Equatable {
+class Pdf  {
   final bool? isAvailable;
   final String? acsTokenLink;
 
@@ -16,6 +15,4 @@ class Pdf extends Equatable {
     'acsTokenLink': acsTokenLink,
   };
 
-  @override
-  List<Object?> get props => [isAvailable, acsTokenLink];
 }
