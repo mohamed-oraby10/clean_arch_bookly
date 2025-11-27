@@ -3,7 +3,6 @@ import 'package:clean_arch_bookly/Features/home/domain/entities/book_entity.dart
 import 'package:clean_arch_bookly/constants.dart';
 import 'package:clean_arch_bookly/core/utils/api_service.dart';
 import 'package:clean_arch_bookly/core/utils/functions/save_books.dart';
-import 'package:hive_flutter/adapters.dart';
 
 abstract class HomeRemoteDataSource {
   Future<List<BookEntity>> fetchFeaturedBooks();
