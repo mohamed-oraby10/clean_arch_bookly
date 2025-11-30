@@ -23,7 +23,7 @@ class HomeRepoImpl extends HomeRepo {
         return right(books);
       }
       books = await homeRemoteDataSource.fetchFeaturedBooks();
-      return right(books);
+      return right(books); 
     } catch (e) {
       if (e is DioException) {
         return Left(ServerFailure.fromDioError(e));
